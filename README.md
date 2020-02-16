@@ -17,3 +17,5 @@ The server will be available on http://localhost:8080/api/swagger-ui.html
 cd client
 npm start
 ```
+
+The client will be available on http://localhost:3000/
