@@ -1,8 +1,25 @@
+import {
+  createStyles,
+  List,
+  ListItem,
+  ListItemText,
+  makeStyles,
+  Theme
+} from "@material-ui/core";
 import React from "react";
 import { useTasks } from ".";
 
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      backgroundColor: theme.palette.background.paper
+    }
+  })
+);
+
 export function TaskList() {
   const [tasks, error] = useTasks();
+  const classes = useStyles();
 
   if (error) {
     return <h2>{error.message}</h2>;
@@ -10,13 +27,13 @@ export function TaskList() {
 
   if (tasks) {
     return (
-      <ul>
+      <List className={classes.root}>
         {tasks.map(task => (
-          <li>
-            {task.name} : {task.status}
-          </li>
+          <ListItem>
+            <ListItemText primary={task.name} secondary={task.status} />
+          </ListItem>
         ))}
-      </ul>
+      </List>
     );
   }
 
