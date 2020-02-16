@@ -1,7 +1,7 @@
 package com.mucsi96.personalDashboard;
 
 import com.mucsi96.personalDashboard.model.Task;
-import com.mucsi96.personalDashboard.model.TaskRepository;
+import com.mucsi96.personalDashboard.repository.TaskRepository;
 import com.mucsi96.personalDashboard.model.TaskStatus;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
