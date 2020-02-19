@@ -40,7 +40,7 @@ export function TasksCard() {
   if (tasks) {
     return (
       <Card>
-        <CardHeader title="All Tasks" />
+        <CardHeader title="Tasks" />
         <List className={classes.root}>
           <ListItem>
             <Typography
