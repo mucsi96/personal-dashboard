@@ -6,6 +6,7 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -22,5 +23,7 @@ public class Task {
     @NonNull
     @Enumerated(EnumType.STRING)
     private TaskStatus status;
+    private Date dueDate;
+    private float progress;
 }
 

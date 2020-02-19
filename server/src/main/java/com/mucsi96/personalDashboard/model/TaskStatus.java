@@ -1,7 +1,7 @@
 package com.mucsi96.personalDashboard.model;
 
 public enum TaskStatus {
-    NEW,
+    PENDING,
     PROGRESS,
     DONE
 }

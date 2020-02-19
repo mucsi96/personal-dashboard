@@ -1,6 +1,6 @@
-import { createStyles, makeStyles, Paper } from "@material-ui/core";
+import { createStyles, makeStyles } from "@material-ui/core";
 import React from "react";
-import { TaskList } from "./tasks/TaskList";
+import { TasksCard } from "./tasks/TasksCard";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -17,9 +17,7 @@ export function Main() {
   return (
     <main className={classes.root}>
       <div />
-      <Paper>
-        <TaskList />
-      </Paper>
+      <TasksCard />
       <div />
     </main>
   );
